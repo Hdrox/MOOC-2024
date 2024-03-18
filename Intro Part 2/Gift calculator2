@@ -1,0 +1,34 @@
+gift = float(input("Value of gift: "))
+tax = 0
+bracket = 0
+
+if gift <= 5000:
+    tax = 0
+    bracket = 0
+    ll = 0
+elif gift <= 25000:
+    tax = 0.08
+    ll = 100
+    bracket = 5000
+elif gift <= 55000:
+    tax = 0.10
+    ll = 1700
+    bracket = 25000
+elif gift <= 200000:
+    tax = 0.12
+    ll = 4700
+    bracket = 55000
+elif gift <= 1000000:
+    tax = 0.15
+    ll = 22100
+    bracket = 200000
+elif gift > 1000000:
+    tax = 0.17
+    ll = 142100
+    bracket = 1000000
+
+if tax == 0:
+    print("No tax!")
+else:
+    taxes_paid = ll + (gift - bracket) * tax
+    print("Amount of tax:", (taxes_paid))

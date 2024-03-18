@@ -1,0 +1,39 @@
+'''Please write a program which asks for the names and ages of two persons. The program should then print out the name of the elder.
+
+Some examples of expected behaviour:
+
+Sample output
+Person 1:
+Name: Alan
+Age: 26
+Person 2:
+Name: Ada
+Age: 27
+The elder is Ada
+
+Sample output
+Person 1:
+Name: Bill
+Age: 1
+Person 2:
+Name: Jean
+Age: 1
+Bill and Jean are the same age
+'''
+
+#person_1 = input("Name: ")
+person_1 = "Alan"
+#age_1 = int(input("Age: "))
+age_1 = int(26)
+#person_2 = input("Name ")
+person_2 = "Ada"
+#age_2 = int(input("Age: "))
+age_2 = int(28)
+
+if age_1 > age_2:
+    print (f"The elder is {person_1}")
+elif age_1 < age_2:
+    print (f"The elder is {person_2}")
+
+else:
+    print (f"{person_1}and{person_2} are the same age")

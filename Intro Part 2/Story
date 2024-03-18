@@ -1,0 +1,25 @@
+'''full_story = ""
+
+while True:
+    previous_word = story
+    story = input("Please type in a word: ")
+    if story == "end":
+        break
+    full_story += story + " "
+
+
+print (full_story)
+
+'''
+
+full_story = ""
+previous_word = ""
+
+while True:
+    new_word = input("Please type in a word: ")
+    if new_word == "end" or new_word == previous_word:
+        break
+    full_story += new_word + " "
+    previous = new_word
+
+print (full_story)

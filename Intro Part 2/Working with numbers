@@ -1,0 +1,22 @@
+number_list = []
+positive_numbers = []
+negative_numbers = []
+print ("Please type in integer numbers. Type in 0 to finish. ")
+
+while True:
+    number = int(input("Number: "))
+
+    if number == 0:
+        break
+    number_list.append(number)
+    if number > 0:
+        positive_numbers.append(number)
+    if number < 0:
+        negative_numbers.append(number)
+
+
+print ("Numbers typed in ",len(number_list))
+print ("The sum of the numbers is ",(sum(number_list)))
+print ("The mean of the numbers is ", sum(number_list)/len(number_list))
+print ("Positive numbers ",len(positive_numbers))
+print ("Negative numbers ",len(negative_numbers))
